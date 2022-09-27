@@ -1,0 +1,19 @@
+{
+    "name": "@flexent/eslint-config",
+    "version": "0.0.0",
+    "description": "Common ESLint Configuration",
+    "author": "ubio",
+    "license": "ISC",
+    "main": "./index.js",
+    "scripts": {
+        "postversion": "npm publish && git push --tags origin main"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.38.1",
+        "@typescript-eslint/parser": "^5.38.1",
+        "eslint-config-recommended": "^4.1.0",
+        "eslint-plugin-simple-import-sort": "^8.0.0",
+        "eslint-plugin-unused-imports": "^2.0.0",
+        "eslint-plugin-vue": "^9.5.1"
+    }
+}
