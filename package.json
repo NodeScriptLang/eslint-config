@@ -6,7 +6,7 @@
     "license": "ISC",
     "main": "./index.js",
     "scripts": {
-        "postversion": "npm publish && git push --tags origin main"
+        "postversion": "npm publish --access=public && git push --tags origin main"
     },
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^5.38.1",
