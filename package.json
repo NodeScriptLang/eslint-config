@@ -1,6 +1,6 @@
 {
     "name": "@flexent/eslint-config",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Common ESLint Configuration",
     "author": "ubio",
     "license": "ISC",
