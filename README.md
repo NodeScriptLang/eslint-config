@@ -1,12 +1,8 @@
-# UBO Shared ESLint Config
+# Flexent ESLint Config
 
 ```json
 // .eslintrc.json
 {
-    "extends": ["@ubio/eslint-config"]
+    "extends": ["@flexent/eslint-config"]
 }
 ```
-
-## License
-
-Apache 2.0 [License](LICENSE.md) © UBIO
