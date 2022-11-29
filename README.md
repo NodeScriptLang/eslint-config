@@ -3,6 +3,6 @@
 ```json
 // .eslintrc.json
 {
-    "extends": ["@flexent/eslint-config"]
+    "extends": ["@nodescript/eslint-config"]
 }
 ```
