@@ -1,4 +1,4 @@
-# Flexent ESLint Config
+# NodeScript ESLint Config
 
 ```json
 // .eslintrc.json
