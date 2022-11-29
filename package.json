@@ -1,5 +1,5 @@
 {
-    "name": "@flexent/eslint-config",
+    "name": "@nodescript/eslint-config",
     "version": "1.0.4",
     "description": "Common ESLint Configuration",
     "author": "ubio",
