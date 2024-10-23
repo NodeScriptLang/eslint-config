@@ -1,9 +1,9 @@
 import eslint from '@eslint/js';
-import typescriptEslint from 'typescript-eslint';
-import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import pluginVue from 'eslint-plugin-vue';
+import globals from 'globals';
+import typescriptEslint from 'typescript-eslint';
 
 export const typescriptRules = {
     '@stylistic/arrow-parens': ['error', 'as-needed'],
