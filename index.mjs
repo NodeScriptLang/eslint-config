@@ -1,6 +1,7 @@
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import unusedImports from 'eslint-plugin-unused-imports';
 import pluginVue from 'eslint-plugin-vue';
 import globals from 'globals';
 import typescriptEslint from 'typescript-eslint';
@@ -18,7 +19,6 @@ export const typescriptRules = {
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-empty-object-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', { args: 'after-used', argsIgnorePattern: '^_', caughtErrors: 'all', caughtErrorsIgnorePattern: '^_err$', destructuredArrayIgnorePattern: '^_', varsIgnorePattern: '^_', ignoreRestSiblings: true }],
     'curly': ['error', 'all'],
     'eol-last': 'error',
     'eqeqeq': ['error', 'always', { null: 'never' }],
@@ -92,6 +92,28 @@ export const sharedConfigs = [
             'simple-import-sort/imports': 'error',
             'simple-import-sort/exports': 'error',
         },
+    },
+    // Unused imports
+    {
+        plugins: {
+            'unused-imports': unusedImports,
+        },
+        rules: {
+            '@typescript-eslint/no-unused-vars': 'off',
+            'unused-imports/no-unused-imports': 'error',
+            'unused-imports/no-unused-vars': [
+                'warn',
+                {
+                    args: 'after-used',
+                    argsIgnorePattern: '^_',
+                    caughtErrors: 'all',
+                    caughtErrorsIgnorePattern: '^_err$',
+                    destructuredArrayIgnorePattern: '^_',
+                    varsIgnorePattern: '^_',
+                    ignoreRestSiblings: true,
+                },
+            ]
+        }
     },
 
     // TypeScript Overrides
