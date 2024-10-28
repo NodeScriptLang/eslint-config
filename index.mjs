@@ -23,6 +23,7 @@ export const typescriptRules = {
     'eol-last': 'error',
     'eqeqeq': ['error', 'always', { null: 'never' }],
     'indent': 'off',
+    'no-console': ['error', { 'allow': ['warn', 'info', 'error'] }],
     'no-empty': ['error', { allowEmptyCatch: true }],
     'vue/prefer-import-from-vue': 'off',
 };
@@ -144,6 +145,21 @@ export const sharedConfigs = [
         rules: {
             // To allow Mocha paddings that improve test readability
             '@stylistic/padded-blocks': 'off',
+            'no-restricted-properties': [
+                'error',
+                {
+                    'object': 'describe',
+                    'property': 'only'
+                },
+                {
+                    'object': 'context',
+                    'property': 'only'
+                },
+                {
+                    'object': 'it',
+                    'property': 'only'
+                }
+            ]
         },
     },
 
