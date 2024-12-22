@@ -42,6 +42,7 @@ export const vueRules = {
     'vue/html-end-tags': 'error',
     'vue/html-indent': ['error', 4, { alignAttributesVertically: false }],
     'vue/html-self-closing': ['error', { html: { void: 'always' } }],
+    'vue/max-attributes-per-line': ['error', { singleline: { max: 6 }, multiline: { max: 1 } }],
     'vue/multi-word-component-names': 'off',
     'vue/multiline-html-element-content-newline': 'off',
     'vue/no-multi-spaces': 'error',
