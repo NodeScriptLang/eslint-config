@@ -5,6 +5,7 @@ import unusedImports from 'eslint-plugin-unused-imports';
 import pluginVue from 'eslint-plugin-vue';
 import globals from 'globals';
 import typescriptEslint from 'typescript-eslint';
+import vueParser from 'vue-eslint-parser';
 
 export const typescriptRules = {
     '@stylistic/arrow-parens': ['error', 'as-needed'],
@@ -132,6 +133,15 @@ export const sharedConfigs = [
     {
         files: ['**/*.vue'],
         rules: vueRules,
+        languageOptions: {
+            parser: vueParser,
+            parserOptions: {
+                parser: '@typescript-eslint/parser',
+                ecmaVersion: 2022,
+                sourceType: 'module',
+                modules: true
+            }
+        }
     },
 
     // Plain JS Overrides
