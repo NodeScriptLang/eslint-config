@@ -1,6 +1,6 @@
 {
     "name": "@nodescript/eslint-config",
-    "version": "2.0.3",
+    "version": "2.1.0",
     "description": "Common ESLint Configuration",
     "license": "ISC",
     "type": "module",
